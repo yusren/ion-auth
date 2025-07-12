@@ -1,0 +1,22 @@
+{
+  "name": "ptpnid/ion-auth",
+  "description": "Middleware Laravel untuk autentikasi via SSO ION",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "PtpnId\\IonAuth\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0|^10.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PtpnId\\IonAuth\\IonAuthServiceProvider"
+      ]
+    }
+  }
+}
