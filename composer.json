@@ -10,7 +10,11 @@
   },
   "require": {
     "php": "^8.0",
-    "illuminate/support": "^9.0|^10.0"
+    "illuminate/support": "^9.0|^10.0",
+    "illuminate/http": "^9.0|^10.0",
+    "illuminate/routing": "^9.0|^10.0",
+    "illuminate/auth": "^9.0|^10.0",
+    "illuminate/session": "^9.0|^10.0"
   },
   "extra": {
     "laravel": {
