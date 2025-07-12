@@ -23,7 +23,7 @@ ION_SSO_API_URL=url sso ION
 3. Pastikan parameter telah berlaku
 
 ```sh
-php artisan config:cahhe 
+php artisan config:cache 
 ```
 
 ## Bagaimana menggunakan di Route?
