@@ -38,4 +38,21 @@ class InitController extends Controller
 
         return redirect()->intended(config('ion-auth.redirect_after_login'));
     }
+    
+    public function handleSSO(Request $request, SsoAuthService $sso)
+    {
+        $userToken = $request->header('User-Token');
+        $authUser = $sso->checkUserToken($userToken);
+    
+        if (!$authUser) {
+            return response()->json(['message' => 'Unauthorized'], 401);
+        }
+    
+        // Jika berhasil, login atau simpan session
+        // Auth::loginUsingId($authUser['id']); // jika ID cocok
+        session(['ion_user' => $authUser]);
+    
+        return response()->json(['message' => 'Authenticated', 'user' => $authUser]);
+    }
 }
+
