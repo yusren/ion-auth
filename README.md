@@ -1,5 +1,5 @@
 # PHP ION Auth Client
-Agar Framework Laravel bisa menggunakan layanan SSO ION PTPN IV
+Agar Framework Laravel9.x (PHP8.x) bisa menggunakan layanan SSO ION PTPN IV
 
 ## Instalasi 
 
